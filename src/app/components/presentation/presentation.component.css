@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+h2{
+    font-size: 2vh;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 2vh;
+}
+h1{
+    font-size: 5vh;
+}
+
+p-tag ::ng-deep{
+    font-size: 4rem;
+}
+
+.panel{
+    background-color: rgba(255, 255, 255, 0.863);
+    color: black;
+    border-radius: 1vh;
+}
+
+.all{
+    margin: 3vh;
+}
