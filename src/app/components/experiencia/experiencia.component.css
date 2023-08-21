@@ -1,0 +1,29 @@
+.card{
+    background-color: aliceblue;
+}
+.customized-timeline {
+    background-color: #ec0000; /* Cambia el color de fondo según tus preferencias */
+    border: 1px solid #ccc; /* Cambia el borde según tus preferencias */
+    /* Agrega otros estilos según sea necesario */
+}
+
+img{
+    height: 5vh;
+    width: 5vh;
+    margin: auto;
+}
+
+
+
+.panel{
+    height: 40vh;
+}
+
+p-tag ::ng-deep{
+    font-size: 4rem;
+}
+
+p-fieldset .p-fieldset-legend ::ng-deep{
+
+    display: none;
+}

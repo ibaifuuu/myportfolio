@@ -15,12 +15,19 @@ import { CardModule } from 'primeng/card'
 import { TerminalModule } from 'primeng/terminal';
 import { FieldsetModule } from 'primeng/fieldset';
 import { TagModule } from 'primeng/tag';
+import { HeaderComponent } from './components/header/header.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { TimelineModule } from 'primeng/timeline';
+import { AccordionModule } from 'primeng/accordion'
+import {PanelModule} from 'primeng/panel'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PresentationComponent,
+    HeaderComponent,
+    ExperienciaComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,10 @@ import { TagModule } from 'primeng/tag';
     CardModule,
     TerminalModule, 
     FieldsetModule,
-    TagModule
+    TagModule,
+    TimelineModule,
+    AccordionModule,
+    PanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

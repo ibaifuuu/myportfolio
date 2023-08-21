@@ -6,7 +6,7 @@ h2{
     padding: 2vh;
 }
 h1{
-    font-size: 5vh;
+    font-size: 3vh;
 }
 
 p-tag ::ng-deep{
@@ -14,11 +14,13 @@ p-tag ::ng-deep{
 }
 
 .panel{
-    background-color: rgba(255, 255, 255, 0.863);
+    background-color: rgba(255, 255, 255, 0.767);
     color: black;
     border-radius: 1vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
-.all{
-    margin: 3vh;
+#panel{
+    background-color: var(--secondary-color);
 }

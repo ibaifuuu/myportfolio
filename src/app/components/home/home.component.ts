@@ -1,3 +1,4 @@
+import { HomeService } from './../home.service';
 import { Component,Input } from '@angular/core';
 import { AppComponent } from 'src/app/app.component';
 import { trigger, state, style, animate, transition,  AnimationEvent } from '@angular/animations';
@@ -22,7 +23,7 @@ export class HomeComponent {
   activeItem: MenuItem; // Definición de la propiedad activeItem (si lo necesitas)
   isShrunk:boolean = false;
 
-  constructor() {
+  constructor(private HomeService:HomeService) {
     // Carga los elementos de menú en this.items
     this.items = [
       { label: 'Yo', icon: 'pi pi-user' },
@@ -32,8 +33,9 @@ export class HomeComponent {
     ];
     this.activeItem = this.items[0];
   }
-  toggleShrink() {
+  toggleShrink( ) {
     this.isShrunk = !this.isShrunk;
+    this.HomeService.setIsShrunk(this.isShrunk);
   }
 }
   

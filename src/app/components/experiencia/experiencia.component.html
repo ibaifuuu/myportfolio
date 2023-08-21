@@ -1,0 +1,28 @@
+<p class="m-0">
+  <p-tag
+    [style]="{ 'font-size': '2vh', 'margin-left': '3vh', 'margin-top': '2vh' }"
+    value="Experiencia"
+  >
+  </p-tag>
+</p>
+<div class="pan">
+  <p-accordion class="w-full">
+    <ng-container *ngFor="let tab of tabs; let i = index">
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i [class]="tab.headerIconClass"
+              ><img src="{{ tab.image }}" alt=""
+            /></i>
+            <i *ngIf="tab.showCogIcon" class="pi pi-cog ml-2"></i>
+          </div>
+        </ng-template>
+        <div class="panel">
+          <ng-template pTemplate="content">
+            <p class="m-0">{{ tab.content }}</p>
+          </ng-template>
+        </div>
+      </p-accordionTab>
+    </ng-container>
+  </p-accordion>
+</div>

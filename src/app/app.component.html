@@ -1,2 +1,5 @@
 <app-home></app-home>
+<app-header *ngIf="isShrunk"></app-header>
+<div *ngIf="isShrunk">
 <router-outlet></router-outlet>
+</div>
